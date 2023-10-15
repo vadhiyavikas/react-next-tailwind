@@ -1,8 +1,9 @@
-import React from "react"
-import Layout from "../layouts/index"
-import Landing from "../landing/index"
-export default function Page() {
-    return(
-        <Layout/>
-    )
+import React from "react";
+import RootLayout from "@/layouts";
+import Landing from "../components/landing/index";
+
+const Home = () => {
+  return <RootLayout>{<Landing />}</RootLayout>;
 };
+
+export default Home;
